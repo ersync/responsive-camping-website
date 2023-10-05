@@ -1,19 +1,37 @@
 @media screen and (min-width: 576px) {
-    
+
 }
 
 @media screen and (min-width: 768px) {
+    .nav__btn {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
 
 }
 
 @media screen and (min-width: 992px) {
+    .nav__links {
+        display: block;
+    }
+
+    .menu {
+        gap: 2rem;
+    }
 
 }
 
 @media screen and (min-width: 1200px) {
-
+    .menu {
+        gap: 4rem;
+    }
 }
 
 @media screen and (min-width: 1400px) {
-
+    .menu {
+        gap: 6rem;
+    }
 }
