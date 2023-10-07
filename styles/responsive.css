@@ -44,6 +44,14 @@
         margin-right: 6rem;
     }
 
+    .footer-wrapper {
+        flex-direction: row;
+    }
+
+    .footer-left {
+        flex-basis: 50%;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
