@@ -10,6 +10,8 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
+
 }
 
 *, *::before, *::after {
@@ -54,7 +56,7 @@ body {
 
 .header {
     background: linear-gradient(rgba(40, 40, 40, 0.7), rgba(40, 40, 40, 0.3)), url("../images/header-bg.jpg") center/cover no-repeat;
-    min-height: 80vh;
+    min-height: 70rem;
     border-bottom-left-radius: 10rem;
     border-bottom-right-radius: 10rem;
 }
@@ -265,6 +267,7 @@ body {
     color: var(--white);
     text-decoration: none;
     padding: .4rem 2rem;
+    text-align: center;
     border-radius: 1.5rem;
     border: 1px solid var(--white);
 }
@@ -445,6 +448,8 @@ main {
     margin: 0 auto;
     text-align: center;
     margin-bottom: 3rem;
+    font-family: Archivo;
+    font-size: 3rem;
 }
 
 .destinations__cards {
@@ -601,7 +606,7 @@ main {
 .newsletter__form {
     background-color: white;
     border-radius: 2rem;
-    padding: 0 2rem;
+    padding: 0 1rem 0 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -614,15 +619,15 @@ main {
 }
 
 .newsletter__input {
+
     width: 100%;
     height: 7rem;
     border-radius: 2rem;
     border: none;
-    padding: 2rem;
-    padding-left: 2rem;
+    padding: 2rem 1rem;
     border: none;
     outline: none;
-
+    color: var(--grey-md);
 }
 
 .newsletter__submit {
@@ -645,6 +650,23 @@ main {
 ==============*/
 .footer {
     background-color: #F8E1DB;
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+    position: relative;
+}
+
+.footer
+.footer_scroll {
+    position: absolute;
+    right: 4rem;
+    top: -2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2rem;
 }
 
 .footer-wrapper {
@@ -652,7 +674,7 @@ main {
     display: flex;
     flex-direction: column;
     color: #3B3735;
-    padding: 5rem 0rem;
+    padding: 5rem 2rem 0;
     justify-content: space-between;
     border-top-left-radius: 10rem;
     border-top-right-radius: 10rem;
@@ -664,7 +686,7 @@ main {
 .footer-right {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 3rem;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -680,8 +702,8 @@ main {
 }
 
 .footer-content__description {
+    text-align: justify;
     margin-bottom: 2rem;
-    max-width: 60rem;
 }
 
 .footer-app {
@@ -705,7 +727,7 @@ main {
 }
 
 .footer-column {
-    margin: 0 1rem;
+    /*margin: 0 1rem;*/
 }
 
 .footer-list {

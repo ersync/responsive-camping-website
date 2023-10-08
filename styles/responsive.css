@@ -1,5 +1,16 @@
 @media screen and (min-width: 576px) {
+    .header {
+        min-height: 75rem;
+    }
 
+    .footer-wrapper {
+        padding: 5rem 0rem 0;
+
+    }
+
+    .footer-right {
+        flex-wrap: nowrap;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -24,6 +35,10 @@
     .newsletter__content {
         margin-right: 2rem;
     }
+
+    .footer-right {
+        flex-wrap: nowrap;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -46,11 +61,15 @@
 
     .footer-wrapper {
         flex-direction: row;
+        align-items: stretch;
     }
 
     .footer-left {
-        flex-basis: 50%;
+        margin-right: 5rem;
+        max-width: 48rem;
+
     }
+
 
 }
 
@@ -65,6 +84,14 @@
 @media screen and (min-width: 1400px) {
     .newsletter__content {
         /*margin-right: 8rem;*/
+    }
+
+    .footer-left {
+        max-width: 60rem;
+    }
+
+    .footer-right {
+        gap: 5rem;
     }
 
 }
