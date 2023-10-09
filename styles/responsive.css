@@ -7,6 +7,10 @@
         display: none;
     }
 
+    .nav-mobile {
+        display: none;
+    }
+
     .menu {
         display: flex;
     }
@@ -22,6 +26,10 @@
         gap: 2rem;
     }
 
+    .header-content__caption {
+        max-width: 44.5rem;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -31,7 +39,4 @@
 }
 
 @media screen and (min-width: 1400px) {
-    .menu {
-        gap: 6rem;
-    }
 }

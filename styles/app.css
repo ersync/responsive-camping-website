@@ -1,6 +1,8 @@
 :root {
     --orange: #E76F51;
     --white: #fff;
+    --grey: #D2D2D2;
+    --app-bg: #FAF4F2
 }
 
 html {
@@ -16,6 +18,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.6;
     font-family: "Roboto Regular", sans-serif;
+    background-color: var(--app-bg);
 
 }
 
@@ -28,6 +31,20 @@ body {
 }
 
 /*
+===============
+   Components
+===============
+*/
+.btn {
+    color: var(--white);
+    background-color: var(--grey);
+    border-radius: 5rem;
+    padding: 1rem 5rem;
+
+}
+
+
+/*
 =============
    HEADER
 =============
@@ -35,7 +52,7 @@ body {
 
 .header {
     background: linear-gradient(rgba(40, 40, 40, 0.7), rgba(40, 40, 40, 0.3)), url("../images/header-bg.jpg") center/cover no-repeat;
-    min-height: 55rem;
+    min-height: 80vh;
     border-bottom-left-radius: 10rem;
     border-bottom-right-radius: 10rem;
 }
@@ -153,7 +170,7 @@ body {
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    background-color: rgba(40, 38, 37, 0.86);
+    background-color: rgba(40, 38, 37, 0.92);
     position: fixed;
     left: -100%;
     bottom: 0;
@@ -170,17 +187,70 @@ body {
 
 }
 
+.nav-mobile__title {
+    font-family: "Archivo";
+    word-spacing: 0.5rem;
+    border-bottom: 0.7px solid white;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+}
+
 .menu-mobile__item {
     margin-bottom: 2rem;
+
 }
+
 
 .menu-mobile__link {
     list-style: none;
     color: var(--white);
     text-decoration: none;
-
+    position: relative;
+    transition: all 200ms ease-in-out;
 
 }
+
+.menu-mobile__link::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--orange);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+
+}
+
+/*.menu-mobile__link::before {*/
+/*    content: "";*/
+/*   */
+/*    height: 0rem;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    margin: auto;*/
+/*    background-color: var(--orange);*/
+/*    position: absolute;*/
+/*    transform: translateY(100%);*/
+/*    transition: all 200ms ease-in-out;*/
+/*}*/
+
+.menu-mobile__link:hover {
+    padding-left: 2.5rem;
+    transition: all 200ms ease-in-out;
+
+}
+
+.menu-mobile__link:hover::before {
+    width: 1.8rem;
+    transition: all 200ms ease-in-out;
+
+}
+
 
 .nav-mobile__links {
     display: flex;
@@ -258,6 +328,99 @@ body {
 
 .nav__btn--open .nav__btn-line::after {
     transform: translateY(-5px) rotate(-45deg)
+}
+
+/*
+================
+ Header Content
+================
+*/
+
+.header-content {
+    padding: 2rem;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.header-content__title {
+    font-family: Archivo;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    max-width: 34.5rem;
+
+}
+
+.header-content__caption {
+    margin-bottom: 2rem;
+    max-width: 30rem;
+
+}
+
+.header-content__link {
+    background-color: var(--orange);
+}
+
+
+/*
+--- Main ----
+*/
+
+
+main {
+
+}
+
+
+/*
+================
+   services
+================
+*/
+
+.services {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin: -15rem -1rem 0;
+
+
+}
+
+.service {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 26rem;
+    flex: 1 1 auto;
+    margin: 1rem;
+    padding: 0 4rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    text-align: center;
+}
+
+
+.service__img {
+    display: block;
+}
+
+.service__title {
+    font-family: "Roboto Medium";
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem 0;
+}
+
+.service__caption {
+
 }
 
 
